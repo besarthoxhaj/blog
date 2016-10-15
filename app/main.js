@@ -18,6 +18,8 @@ var here = findMax([5,1,2,3,4],getMax);
 var client = new Nes.Client(
   process.env.NODE_ENV === 'development'
   ? 'ws://localhost:2000'
+  : window.location.protocol === 'https:'
+  ? 'wss://' + location.hostname
   : 'ws://' + location.hostname
 );
 client.connect(err => {
