@@ -1,0 +1,9 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[options]
+module.system=haste
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/flow/css_module_stub.js'

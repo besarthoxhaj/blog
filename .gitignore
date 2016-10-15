@@ -1,0 +1,10 @@
+public
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+node_modules
+.DS_Store
