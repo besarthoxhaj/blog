@@ -1,0 +1,27 @@
+#map {
+  width:100%;
+}
+
+.land {
+  fill:#aaa;
+  stroke:#fff;
+}
+
+.land:hover {
+  fill:orange;
+}
+
+.graticule {
+  fill:none;
+  stroke:#d0d0d0;
+  stroke-width:.5px;
+  stroke-opacity:.5;
+}
+.container {
+  width:100%;
+}
+.inputContainer {
+  display:flex;
+  width:250px;
+  flex-direction:column;
+}
