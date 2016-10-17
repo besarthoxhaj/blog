@@ -1,4 +1,7 @@
 {
   "presets":["es2015"],
-  "plugins":["babel-plugin-transform-flow-strip-types"]
+  "plugins":[
+    "babel-plugin-transform-flow-strip-types",
+    "transform-object-assign"
+  ]
 }
