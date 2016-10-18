@@ -6,7 +6,7 @@
     "start": "webpack && cp ./assets/images/* ./public/ && cp ./assets/data/* ./public/ && node ./api/index.js",
     "jshint": "jshint -c .jshintrc --exclude-path .gitignore .",
     "test": "flow",
-    "build": "webpack && cp ./assets/images/* ./public/"
+    "build": "cp ./assets/images/* ./public/ && cp ./assets/data/* ./public/ && cp ./assets/images/* ./public/ && webpack"
   },
   "repository": {
     "type": "git"
@@ -25,10 +25,12 @@
     "d3-geo": "^1.2.6",
     "d3-request": "^1.0.2",
     "d3-selection": "^1.0.2",
+    "d3-transition": "^1.0.2",
     "extract-text-webpack-plugin": "1.0.1",
     "handlebars": "^3.0.3",
     "hapi": "15.1.1",
     "inert": "4.0.2",
+    "isomorphic-fetch": "^2.2.1",
     "joi": "^9.1.1",
     "nes": "^6.3.1",
     "node-sass": "3.10.1",

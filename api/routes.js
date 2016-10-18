@@ -22,16 +22,17 @@ module.exports = [
   },
   {
     method:'GET',
-    path:'/one',
+    path:'/repl',
     handler:(req,res) => {
-      res.view('one');
+      res.view('repl');
     }
   },
   {
-    method:'GET',
-    path:'/two',
+    method:'POST',
+    path:'/api/repl',
     handler:(req,res) => {
-      res.view('two');
+      console.log('req.payload',req.payload);
+      res({status:'yes'});
     }
   },
   {

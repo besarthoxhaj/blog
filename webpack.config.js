@@ -5,23 +5,27 @@ var webpack = require('webpack');
 
 module.exports = {
   watch:process.env.NODE_ENV !== 'production',
-  entry:'./app/main.js',
+  entry:{
+    './main':'./app/main.js',
+    './map':'./app/map.js',
+    './repl':'./app/repl.js',
+  },
   output:{
-    path:'./public',
-    filename:'main.js'
+    path:'./public/',
+    filename:'[name].js',
   },
   module:{
     loaders:[{
       test:/\.js$/,
       exclude:/node_modules/,
-      loader:'babel-loader'
+      loader:'babel-loader',
     },{
       test:/\.scss$/,
-      loader:ExtractTextPlugin.extract('style-loader','css!sass')
+      loader:ExtractTextPlugin.extract('style-loader','css!sass'),
     }]
   },
   plugins:[
     new ExtractTextPlugin('main.css'),
-    new webpack.DefinePlugin({'process.env.NODE_ENV':JSON.stringify(process.env.NODE_ENV || 'development')})
-  ]
+    new webpack.DefinePlugin({'process.env.NODE_ENV':JSON.stringify(process.env.NODE_ENV || 'development')}),
+  ],
 };
