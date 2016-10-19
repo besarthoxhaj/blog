@@ -1,7 +1,6 @@
 'use strict';
 /* @flow */
 
-
 exports.createContext = () => {
   var context = {
     storeLogs:[],
