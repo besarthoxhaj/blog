@@ -1,4 +1,5 @@
 'use strict';
+/* @flow */
 
 var database = [];
 
@@ -30,10 +31,7 @@ module.exports = [
   {
     method:'POST',
     path:'/api/repl',
-    handler:(req,res) => {
-      console.log('req.payload',req.payload);
-      res({status:'yes'});
-    }
+    handler:require('./handlers/repl.js')
   },
   {
     method:'GET',

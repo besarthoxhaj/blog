@@ -1,4 +1,5 @@
 'use strict';
+/* @flow */
 
 var Joi = require('joi');
 

@@ -1,4 +1,5 @@
 'use strict';
+/* @flow */
 
 var Hapi = require('hapi');
 var server = new Hapi.Server();

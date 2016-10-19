@@ -1,0 +1,70 @@
+/**
+ * Simple grid system
+ * https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css
+ */
+
+.grid {
+  display:flex;
+}
+
+.grid-cell {
+  flex:1;
+}
+
+/* with gutters */
+.grid--gutters {
+  margin: -1em 0 0 -1em;
+}
+.grid--gutters > .grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+/* alignment per row */
+.grid--top {
+  align-items:flex-start;
+}
+.grid--bottom {
+  align-items:flex-end;
+}
+.grid--center {
+  align-items:center;
+}
+
+/* alignment per cell */
+.grid-cell--top {
+  align-self:flex-start;
+}
+.grid-cell--bottom {
+  align-self:flex-end;
+}
+.grid-cell--center {
+  align-self:center;
+}
+
+/* width */
+.grid--1of2 {
+  width:50%;
+}
+
+.grid--1of5 {
+  max-width:20%;
+}
+
+.grid--1of10 {
+  max-width:10%;
+}
+
+.grid--1of20 {
+  max-width:5%;
+}
+
+/* debug */
+.box { height:50px; }
+.red { background-color:red; }
+.black { background-color:black; }
+.blue { background-color:blue; }
+.green { background-color:green; }
+.gray { background-color:rgb(244,244,244); }
+.dark { background-color:#C0C0C0; }
+.long { height:100%; }
+.width { width:100%; }

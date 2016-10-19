@@ -6,8 +6,38 @@
     <link rel='stylesheet' href='/main.css'>
   </head>
   <body>
-    <textarea id='textInput' autocomplete='off'></textarea>
-    <button id='runButton'>RUN</button>
+    <div class='grid grid--gutters grey long'>
+      <div class='grid-cell'>
+        <div class='grid-cell'>
+          <div class='grid'>
+            <div class='grid-cell'>
+              <div class='box red'></div>
+            </div>
+            <div class='grid-cell'>
+              <div id='runButton' class='box green'></div>
+            </div>
+          </div>
+        </div>
+        <div class='grid-cell full-texteditor'>
+          <div class='grid long'>
+            <div id='textLines' class='grid-cell dark grid--1of20'>
+              <div class='lineNumber'>1</div>
+            </div>
+            <div class='grid-cell'>
+              <textarea
+                id='textArea'
+                autocorrect='off'
+                autocapitalize='off'
+                spellcheck='false'
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='grid-cell'>
+        <div class='box black long'></div>
+      </div>
+    </div>
     <script type='text/javascript' src='/repl.js'></script>
   </body>
 <html>
