@@ -1,5 +1,8 @@
 ## OCaml
 
+- [Official website](https://ocaml.org/)
+- [Opam](https://opam.ocaml.org/)
+
 ```sh
 $ brew install ocaml
 $ brew install opam
