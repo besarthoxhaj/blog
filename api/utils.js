@@ -5,8 +5,8 @@ exports.createContext = () => {
   var context = {
     storeLogs:[],
     console:{
-      log:(...args) => {
-        context.storeLogs.push(args.join(' '));
+      log:function() {
+        context.storeLogs.push(arguments);
       }
     }
   };
